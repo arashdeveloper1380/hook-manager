@@ -1,0 +1,22 @@
+{
+    "name": "arashdeveloper1380/hook-manager",
+    "description": "A php package for managing hooks",
+    "autoload": {
+        "psr-4": {
+            "HookManager\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "HookManager\\HookServiceProvider"
+            ],
+            "aliases": {
+                "HookManager": "HookManager\\Facades\\HookManager"
+            }
+        }
+    },
+    "require": {
+        "illuminate/support": "^10.48"
+    }
+}
